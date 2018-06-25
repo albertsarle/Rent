@@ -2,15 +2,8 @@
 
 namespace AlbertSP\Rent;
 
-class Owner
+class Owner extends Named
 {
-    /**
-     * Owner's name
-     *
-     * @var string
-     */
-    protected $name;
-
     /**
      * Properties List
      * @var array
@@ -18,21 +11,13 @@ class Owner
     protected $properties;
 
     /**
-     * Match constructor.
+     * Owner constructor.
      * @param $name
      */
     public function __construct($name)
     {
         $this->name = $name;
         $this->properties= [];
-    }
-
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-        return $this->name;
     }
 
     /**
@@ -69,11 +54,11 @@ class Owner
     }
 
     /**
-     * Get a Property of the Owners List by its name
+     * Get the Properties of the Owners List by its name
      * @param $cityName
      * @return mixed
      */
-    public function getPropertyByCity($cityName)
+    public function getPropertiesByCity($cityName)
     {
         return array_filter(
             $this->properties,

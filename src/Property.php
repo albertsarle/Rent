@@ -2,15 +2,8 @@
 
 namespace AlbertSP\Rent;
 
-class Property
+class Property extends Named
 {
-    /**
-     * Property's name
-     *
-     * @var string
-     */
-    protected $name;
-
     /**
      * Property's City name
      *
@@ -41,22 +34,14 @@ class Property
     /**
      * @return string
      */
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * @return string
-     */
-    public function getCity()
+    public function getCity(): string
     {
         return $this->city;
     }
     /**
      * @return string
      */
-    public function getAddress()
+    public function getAddress(): string
     {
         return $this->address;
     }

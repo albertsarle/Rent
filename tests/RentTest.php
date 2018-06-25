@@ -80,7 +80,7 @@ class RentTest extends TestCase
         $this->owner->addProperty($this->tmpProperty3);
         $this->owner->addProperty($this->tmpProperty4);
 
-        $propertiesByCity = $this->owner->getPropertyByCity('Sabadell');
+        $propertiesByCity = $this->owner->getPropertiesByCity('Sabadell');
         $this->assertCount(3, $propertiesByCity);
     }
 

@@ -2,29 +2,14 @@
 
 namespace AlbertSP\Rent;
 
-class Tenant
+class Tenant extends Named
 {
     /**
-     * Tenant Nameº
-     *
-     * @var [type]
-     */
-    protected $name;
-
-    /**
-     * Match constructor.
+     * Tenant constructor.
      * @param $name
      */
     public function __construct($name)
     {
         $this->name = $name;
-    }
-
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-        return $this->name;
     }
 }

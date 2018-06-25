@@ -150,7 +150,7 @@ class Rental
      * Determines if the Rental is about to expiry soon (in the next EXPIRY_INTERVAL_DAYS)
      * @return bool
      */
-    public function expiresSoon()
+    public function expiresSoon(): bool
     {
         $today = new DateTime();
         $daysToExpiry = $today->diff($this->getDateEnd());
