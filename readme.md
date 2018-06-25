@@ -1,7 +1,6 @@
 # Rent
 
 Rent is a library to help managing Property Rental contracts between Owners and Tenants.
-QuickMarks is an analytics app for web projects. It helps you track events on your websites. It is built using Rails, Devise, and a few charting libraries.
 
 Rentaloffers a few key features:
 - Create Relationships between Owners and Tenants
@@ -31,7 +30,7 @@ Version 0.1 (2018-06-25) - Initial version
 
 ## Credits
 
-Albert SP - Chris Kibble (@ckib16)
+Albert SP - 
 
 ## License
 
