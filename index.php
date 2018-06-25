@@ -1,16 +1,18 @@
 <?php
 
-use AlbertSP\Property;
-use AlbertSP\Rental;
+use AlbertSP\Rent\Owner;
+use AlbertSP\Rent\Property;
+use AlbertSP\Rent\Rental;
+use AlbertSP\Rent\Tenant;
 
 require "vendor/autoload.php";
 
-$owner = new \AlbertSP\Owner('Albert AlbertSP');
+$owner = new Owner('Albert AlbertSP');
 echo "<h1>Owner name : " . $owner->getName() . "</h1>";
 
 
 $properties = [
-    new Property('Casa avis', 'Terrassa', 'Vint-i-dos de Juliol 178 Bxs'),
+    new Property('Casa avis', 'Terrassa', 'Vint-i-dos de Juliol 174 Bxs'),
     new Property('Pis solter', 'Sabadell', 'Advocat Cirera 17'),
     new Property('Pis Tiet', 'Sabadell', 'Montserrat 34'),
     new Property('Solar', 'Sabadell', 'Esplanada de Can Deu')
@@ -27,7 +29,7 @@ if (count($properties))
     echo "</ul>";
 }
 
-$tenant = new \AlbertSP\Tenant('Joan Farre');
+$tenant = new Tenant('Joan FB');
 echo "<h1>Tenant name : " .  $tenant->getName() . "</h1>";
 
 echo "<h1>Rent info: </h1>";
