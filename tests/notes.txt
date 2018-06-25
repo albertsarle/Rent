@@ -1,0 +1,25 @@
+
+AlbertSP
+
+1. Owner
+2. Tenant
+3. Properties
+4. Rental
+
+. An property has a name
+. An owner has a name
+. An tenant has a name
+. An owner has a list of properties
+. An owner can add Properties tot his list of Properties
+. An owner can retrieve Properties from his list of Properties
+. An owner can retrieve Properties from his list of Properties by name
+. An owner can retrieve Properties from his list of Properties by city
+. A Rental has a DateStart a DateEnd and a Monthly Cost
+. A Rental has a Property
+. A Rental has an Owner
+. A Rental has a Tenant
+. A Rental has a Tenant
+. A Rental has en expiry soon method
+
+
+

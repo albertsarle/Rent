@@ -1,0 +1,26 @@
+{
+    "name": "AlbertSP/rent",
+    "description": "Rent Test",
+    "license": "MIT",
+    "keywords": ["Rent", "test"],
+    "authors": [
+        {
+            "name": "Albert Sarlé",
+            "email": "albertAlbertSP@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "^7.3@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "AlbertSP\\Rent\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/RentTest.php"
+          ]
+    }
+}
